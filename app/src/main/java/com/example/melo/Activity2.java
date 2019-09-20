@@ -17,11 +17,11 @@ public class Activity2 extends Activity {
 
         InfoUsuario infoUsuario = getIntent().getExtras().getParcelable("Dados Usuario");
 
-        this.nome = (TextView) findViewById(R.id.NomeView);
-        this.cpf = (TextView) findViewById(R.id.cpfView);
-        this.idade = (TextView) findViewById(R.id.idadeView2);
-        this.sexo = (TextView) findViewById(R.id.sexoView3);
-        this.email = (TextView) findViewById(R.id.emailView4);
+        this.nome = findViewById(R.id.NomeView);
+        this.cpf =  findViewById(R.id.cpfView);
+        this.idade = findViewById(R.id.idadeView2);
+        this.sexo =  findViewById(R.id.sexoView3);
+        this.email = findViewById(R.id.emailView4);
 
         String nomeUsuario = infoUsuario.getNome();
         String cpfUsuario = infoUsuario.getCpf();
